@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: gray;
+}
+header{
+background-image: url(imagens/headerimg.jpg);
+text-align: center;
+}
+header h1{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 10vw;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+section{
+background-color: rgb(197, 197, 197);
+color: rgb(163, 158, 158);
+height: 300px;
+}
+section.img1{
+    background-color: rgb(2, 6, 61);
+}
+section.img2{
+    background-color: rgb(3, 9, 94);
+}
+
