@@ -7,9 +7,10 @@
 
 body{
     background-color: gray;
+    background-image: url(imagens/planodefundo.jpeg);
 }
 header{
-background-image: url(imagens/headerimg.jpg);
+background-image: url(imagens/headerimage.jpeg);
 text-align: center;
 }
 header h1{
@@ -17,7 +18,7 @@ header h1{
     font-weight: bold;
     font-style: italic;
     font-size: 10vw;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    text-shadow: 0 0 3px #19a2f1, 0 0 5px #0000FF;
 }
 section{
 background-color: rgb(197, 197, 197);
@@ -25,9 +26,14 @@ color: rgb(163, 158, 158);
 height: 300px;
 }
 section.img1{
-    background-color: rgb(2, 6, 61);
+    background-color: rgba(0, 0, 0, 0.699);
 }
 section.img2{
-    background-color: rgb(3, 9, 94);
+    background-color: rgba(0, 0, 0, 0.637);
 }
-
+section#img01 {
+    background-image: url(imagens/section01.jpeg);
+}
+section#img02 {
+    background-image: url(imagens/section02.jpeg);
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        h1{
+            color: rgb(66, 66, 66);
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            text-decoration: underline;
+            background-color: gray;
+            box-shadow: 4px 4px 7px 1px white;
+        }
+        header{
+            background-color: rgb(12, 12, 12);
+            padding: 10px;
+            box-shadow: 4px 4px 7px 1px white;
+        }
+        body{
+            background-color: gray;
+            
+        }
+        p{
+            text-align: center;
+            color: rgb(66, 66, 66);
+           
+            
+        }
+        img{
+            padding: 10px;
+            box-shadow: 4px 4px 7px 1px white;
+            border-radius: 15px;
+            margin-left: 525px;
+           }
+        img.js{
+            margin-left: 500px;
+        } 
+        img:hover {
+            zoom: 105%;
+        }   
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Testando carregamento de imagem</h1>
+    </header>
+    <div>
+        <p>A primeira imagem está na mesma pasta que o index</p>
+        <img src="logo-html.png" alt="Logo de HTML">
+    </div>
+    <p>A segunda imagem está em outra pasta, contanto esta pasta esteja dentro da pasta que contém o index</p>
+    <img src="logo/logo-css.png" alt="Logo do CSS">
+    <p>A terceira imagem está sendo carregada, externamente pelo seu URL</p>
+    <img src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png" alt="Logo de JS" class="js"
+</body>
+</html>
