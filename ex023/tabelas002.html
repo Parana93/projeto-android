@@ -11,6 +11,7 @@
             font-size: 2em;
             border-collapse: collapse;
             width: 800px;
+            position: relative; /* usando position para efeito */
         }
         td , th{
             border: 1px solid black;
@@ -21,7 +22,15 @@
            color: white;
         }
         .num {
-            text-align: right;
+            text-align: right; /*geralmente numeros tem o padrão de estar ao lado direito*/
+        }
+        thead > tr > th {
+            position: sticky; /*dará o efeito de colar o th do tr so thead */
+            top: -1px;
+            background-color: gray;
+        } 
+        tbody > tr:nth-child(2n)/* deixar zebrado*/{
+            background-color: lightgray;
         }
     </style>
 </head>
