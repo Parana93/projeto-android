@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- linguagem -->
+<head>
+<meta charset="UTF-8"/> <!--padrão de linguagem latina -->
+<title>tudo sobre o google glass</title> <!-- titulo que aparecerá na aba -->
+<link rel= "stylesheet" tipe="text/css" href="_css/estilo.css"/> <!-- link para conectar um pagina á outra -->
+<link rel="stykesheet" tipe="text/css" href="_css/form.css">
+<script type="text/javascript">
+    function cal_total() {
+         var qtd = parseInt(document.getElementById('cQtd').value);
+        tot = qtd * 1500;
+        document.getElementById('cTot').value = tot;
+    }
+</script>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+</head>
+<body> <!--corpo do site -->
+<div id="interface"> <!-- uma divisão para facilitar organização do site -->
+<header id="cabecalho"> <!-- header e o cabeçalho e indentificamos o próprio -->
+<hgroup>    <!-- grupo de titulos -->
+<h1> Google Glass </h1> <!-- h1 é o titudo primário ou o principal aparecerá maior -->
+<h2> A revolução do Google está chegando </h2> <!-- titulo menos no exp usaremos até o h3 apenas -->
+</hgroup>
+<img id="icone" src="_imagens/contato.png"/> <!-- tag img para colocar imagens ao site src="nome da pastas/nome do arguivo -->
+<nav id="menu"> 
+<h1>Menu Principal</h1>
+<ul>
+<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"> <a href="specs.html">Especificações</a></li>
+<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"> <a href="fotos.html">Fotos</a></li>
+<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"> <a href="multimidia.html">Multimídia</a></li>
+<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"> <a href="fale-conosco.html">Fale conosco</a></li>
+</ul>
+</nav>
+</header>
+<form method="post" id="fContato" action="mailto:contato@cursosemvideo.com" oninput="cal_total();">
+Fale Conosco > Contato
+Formulário de Contato
+por Gustavo Guanabara
+Atualizado em 01/Maio/2013
+<fieldset id="usuario">
+<legend>Identificação do Usuário</legend>
+    <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo" /></p>
+    <p>Senha:<input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos"></p>
+    <p>E-mail:<input type="email"  name="tMail" id="cMail" size="40" maxlength="40"/></p></fieldset>
+    <fieldset id="sexo"><legend>Sexo:</legend>
+        <input type="radio" name="tsexo" id="cMasc"><label for="cMasc"> Masculino </label><br/>
+        <input type="radio" name="tsexo" id="cFem"><label for="cFEM"> Feminino </label></fieldset>
+    <p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc"></p>
+
+</fieldset>
+<fieldset>
+<legend>Endereço do Usuário</legend>
+    <p>Logradouro:<input type="text" name="tRua" id="cRua" size="20" maxlength="40" placeholder="Rua , Av ..."></p>
+     <p>Número:<input type="number" name="tNum" id="cNum" min="0" max="9999"></p>
+     <p><label for="cEst">Estado:</label></p>
+     <select name="tEst" id="cEst">
+     <optgroup label="Região Sudeste">
+     <option value="RJ">Rio de Janeiro</option>
+     <option value="SP">São Paulo</option>
+     <option value="MG">Minas Gerais</option>
+     </optgroup>
+     <optgroup label="Região Sul">
+     <option value="PR">Paraná</option>
+     <option value="SC">Santa Catarina</option>
+     <option value="RS">Rio Grande do Sul</option>
+     </optgroup>
+     </select>
+     <p><label for="cCid">Cidade:</label></p>
+     <select name="tCid" id="cCis"></select>
+     <input type="text" name="tCid" id="cCis" size="40" maxlength="50" placeholder="Sua Cidade" list="cidades"> <!-- o list com as option sao para auto preenchimento -->
+     <datalist>
+         <option value="Rio de Janeiro"></option>
+         <option value="Niteroi"></option>
+         <option value="Nova Iquaçu"></option>
+     </datalist>
+</fieldset>
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+    <p><label for="cUrg">Grau de Urgência:</label>
+        Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2" >Máx</p>
+    <p><label for="cMsg">Mensagem:</label>
+        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+</fieldset>
+<fieldset id="pedido"><legend>Quero um Google Glass</legend>
+    <p><input type="checkbox" name="tPed" id="cPed" checked>
+        <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+    <p><label for="cCor">Cor:</label>
+        <input type="color" name="tCor" id="cCor" value="#0000FF"/></p>
+    <p><label for="cQtd">Quantidade:</label>
+        <input type="number" name="tQtd" id="cQtd" min="0" max="5"></p>
+    <p><label for="cTot">Preço Total: R$</label>
+        <input type="text" name="tTot" id="cTot" placeholder="Total a pagar"></p>
+</fieldset>
+<input type="submit" value="Enviar">
+<input type="image" name="enviar" src="_imagens/botao-enviar.png">
+
+</form>
+<footer id="rodape"> <!-- a parte de baixo do site usa footer--> 
+<p>Copyright 2013 - by Gustavo Guanabara <br/>
+<a href="htt://facebook.com/cursosemvideo" target="_blank "> Facebook </a> 
+<a href="http://twitter.com/cursosemvideo" target="_blank"> / Twitter </a></p> 
+</footer>
+</div>
+</body>
+</html>

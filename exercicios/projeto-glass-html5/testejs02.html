@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>testejavascript</title>
+	<script> 
+		function acendaLampada(){                        <!-- função javascript nome da função e embaixo para trocar de img quando passar o mouser puxando pelo id -->
+			document.getElementById("luz").src ="_imagens/lampada-acesa.jpg";
+
+		}
+		function apagaLampada(){                        
+			document.getElementById("luz").src ="_imagens/lampada-apagada.jpg";
+
+		}
+		function quebraLambada(){
+			document.getElementById('luz').src ="_imagens/lampada-quebrada.jpg";
+		}
+
+
+	</script>
+</head>
+<body>
+<h1>Acenda á lâmpada</h1>
+<img src="_imagens/lampada-apagada.jpg " id="luz" onmousemove ="acendaLampada()" onmouseout="apagaLampada()" onclick="quebraLambada()" /> <!--img com função jsc para quand passar mouse por cima mostrar outra img e quando tirar o mouse outra função -->
+</body>
+</html>	

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- linguagem -->
+<head>
+<meta charset="UTF-8"/> <!--padrão de linguagem latina -->
+<title>tudo sobre o google glass</title> <!-- titulo que aparecerá na aba -->
+<link rel= "stylesheet" tipe="text/css" href="_css/estilo.css"/> <!-- link para conectar um pagina á outra -->
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script> <!-- puxando uma funçáo da pag funcoes q está em javascript -->
+<body> <!--corpo do site -->
+<div id="interface"> <!-- uma divisão para facilitar organização do site -->
+<header id="cabecalho"> <!-- header e o cabeçalho e indentificamos o próprio -->
+<hgroup>	<!-- grupo de titulos -->
+<h1> Google Glass </h1> <!-- h1 é o titudo primário ou o principal aparecerá maior -->
+<h2> A revolução do Google está chegando </h2> <!-- titulo menos no exp usaremos até o h3 apenas -->
+</hgroup>
+<img id="icone" src="_imagens/glass-oculos-preto-peq.png"/> <!-- tag img para colocar imagens ao site src="nome da pastas/nome do arguivo -->
+<nav id="menu"> 
+<h1>Menu Principal</h1>
+<ul>
+<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li><!-- a primeira função e para quando passar o mouse por cima, a segunda para quando sair da img (funcoes java )-->
+<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"> <a href="specs.html">Especificações</a></li>
+<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"> <a href="fotos.html">Fotos</a></li>
+<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"> <a href="multimidia.html">Multimídia</a></li>
+<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"> <a href="fale-conosco.html">Fale conosco</a></li>
+</ul>
+</nav>
+</header>
+<section id="corpo"> <!-- dividir a tela section e o lado esquerdo da tela a parte principal -->
+<article id="principal-artigo">	<!-- cria-se um arquivo para colocar um conteudo ou uma pesquisa -->
+<header id="cabecalho-artigo">
+<group>
+<h3>Tecnologia  Inovações</h3>
+<h1>Saiba tudo sobre o Google Glass</h1>
+<h3>por Gustavo Guanabara</h3>
+<h3 class="direita">Atualizado em 23/Abril/2013</h3> <!-- foi colocada uma class para pode diferenciar dos outros h3 e pode configurar o tal -->
+</group>
+</header>
+
+<h1> O que é </h1>
+<p>O Google Glass é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de Project Glass, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+<figure class="foto-legenda" > 
+<img src="_imagens/glass-quadro-homem-mulher2.jpg"/>
+<figcaption>
+<h3>google glass</h3>
+<p>Uma nova maneira de ver o mundo</p>
+</figcaption>
+</figure>
+<h1>Data de lançamento</h1>
+<p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
+
+<h3>Especificações Técnicas</h3>
+<table id="tablespecs">  <!-- criação de table -->
+<caption><p>Tabela Técnica do Google Glass <span>Mar/2013</span></p></caption> <!-- a utilização do span e para poder configurar de maneira diferente o texto -->
+
+<tr><td class="colunaleft">Tela:</td><td class="colunaright">Resolução equivalente a tela de 25"</td></tr> <!-- tr é cada linha e td são as divições -->
+<tr><td class="colunaleft" rowspan="2">Camera:</td><td class="colunaright"> 5MP para fotos  </td></tr> <!-- td rowspan e para identificar quantas linhas e "palavras espefica irá oculpar" -->
+<tr><td class="colunaright">720p para vídeos</td></tr> 
+<tr><td class="colunaleft" rowspan="2">Conectividade:</td><td class="colunaright"> Wi-Fi </td></tr>
+<tr><td class="colunaright">Bluetooth</td></tr>
+<tr><td class="colunaleft" >Memória Interna:</td><td class="colunaright" > 12GB</td></tr> <!-- utilizado o comando class para haver uma categoria separando os itens na apresentação do itens da coluna da esquerda e direita e para poder formata a tal -->
+<tr><td class="colunaleft" colspan="2">exemplo duas linha na horizontal</td></tr> <!-- caso queira que uma tr oculpe as duas areas horizontals use a opção colspan-->
+</table>
+<h1>Como funciona</h1>
+<p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
+
+<h1>O que você pode fazer com o Google Glasses</h1>
+<p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
+
+[AQUI ENTRA UM VÍDEO]
+</article>
+</section> <!-- aqui e o termino da section do corpo principal do site -->
+<aside id="lateral"> <!-- essa e a parte da direita do site uma especie de noticias complementares -->
+Outras Notícias
+Vídeo mais recente
+
+[AQUI ENTRA UM VÍDEO]
+
+<h1>Novidades no Glass</h1>
+<p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.
+
+Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
+</aside>
+<footer id="rodape"> <!-- a parte de baixo do site usa footer--> 
+<p>Copyright 2013 - by Gustavo Guanabara <br/>
+<a href="htt://facebook.com/cursosemvideo" target="_blank "> Facebook </a> 
+<a href="http://twitter.com/cursosemvideo" target="_blank"> / Twitter </a></p> 
+</footer>
+</div>
+</body>
+</html>
