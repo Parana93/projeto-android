@@ -50,13 +50,13 @@
    text-indent: 20px;
    margin-bottom: 10px;
  }
- span#burguer{
+ span#burguer {
    background-color: rgb(65, 64, 64);
    color: white;
    display: block;
    text-align: center;
  }
- span#burguer:hover{
+ span#burguer:hover {
    background-color: rgb(189, 189, 189);
    color: rgb(70, 69, 69);
    cursor: pointer;
