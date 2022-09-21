@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+    menu{                          /*text tem que ser no menu no li não pega*/
+        display: block;
+        text-align: center;
+        background-color: gray;
+        border: 3px dashed white;
+    }
+    menu li{
+        display: inline-block; /*display da errado no menu*/
+        
+        width: 15vw;
+        padding-left: 10px;
+        
+    }
+    h1{
+        text-shadow: 1px 1px 1px  rgba(250, 193, 88, 0.671);
+    }
+    main{
+        width: 60vw;
+    }
+
+}

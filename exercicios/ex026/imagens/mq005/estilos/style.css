@@ -4,8 +4,10 @@
     margin: 0px;
     padding: 0px;
 }
- body,html{
-    background-color: lightgray;
+ body{
+    background: url(fundo.jpg) ;
+    
+    background-size: 50vw;
  }
  header{
     background-color: rgb(172, 172, 172);
@@ -35,7 +37,7 @@
    text-decoration: underline;
  }
  main{
-   width: 90vw;
+   width: 768px;    /*o tamanho exato que muda o menu*/
    background-color: white;
    margin: auto;
    margin-top: 10px;
